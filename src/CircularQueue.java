@@ -67,7 +67,7 @@ class CircularQueue {
             System.out.println("There is nothing in the queue.");
         } else {
             System.out.println("");
-            for (int i = front; i == rear; i = (i + 1) % size) {
+            for (int i = front; i != rear; i = (i + 1) % size) {
                 System.out.print(array[i] + " ");
             }
             System.out.print(array[rear]);
