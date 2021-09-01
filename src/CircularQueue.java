@@ -44,10 +44,7 @@ class CircularQueue {
 
     // Check if the queue is empty
     public boolean isEmpty() {
-        if (front != -1) {
-            return false;
-        }
-        return true;
+        return front == -1;
     }
 
     // Check if the queue is full
