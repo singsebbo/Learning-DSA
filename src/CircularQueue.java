@@ -49,10 +49,7 @@ class CircularQueue {
 
     // Check if the queue is full
     public boolean isFull() {
-        if (front == 0 && rear + 1 == size || front == rear + 1) {
-            return true;
-        }
-        return false;
+        return (rear + 1) % size == front;
     }
 
     // Returns the front value of the queue
