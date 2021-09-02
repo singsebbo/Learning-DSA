@@ -38,8 +38,9 @@ class CircularQueue {
             rear = -1;
             return array[tempIndex];
         }
+        int tempIndex = front;
         front = (front + 1) % size;
-        return array[front];
+        return array[tempIndex];
     }
 
     // Check if the queue is empty
